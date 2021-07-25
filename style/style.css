@@ -1,0 +1,433 @@
+/******************
+       Header 
+*****************/
+body {
+    width: 100%;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.carousel-inner .carousel-item img {
+    width: 100%;
+}
+
+.carousel-item {
+    -webkit-background-size: center;
+    background-size: cover;
+}
+
+.overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.btn-1 {
+    color: #fff;
+    background-color: #fbaf32;
+    padding: 10px 30px;
+    border: 2px solid #fbaf32;
+    border-radius: 14px;
+
+    font-weight: 600;
+
+
+}
+
+.btn-1:hover {
+    background: transparent;
+    color: #fff;
+    transition: 1.3s;
+}
+
+.btn-2 {
+    color: #fff;
+    background-color: #9bbc8b;
+    padding: 10px 30px;
+    border: 2px solid #9bbc8b;
+    border-radius: 14px;
+
+    font-weight: 600;
+
+
+}
+
+.btn-2:hover {
+    background: transparent;
+    color: #fff;
+    transition: 1.3s;
+}
+
+.carousel-caption {
+    top: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.carousel-caption h1 {
+    font-size: 65px;
+}
+
+span {
+    color: #fbaf32;
+}
+
+/* booking */
+
+/* .booking {
+    background: #f5f5f5;
+} */
+.book {
+    padding-top: 40px;
+    color: #9bbc8b;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.booking h2 {
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+.booking p {
+    font-size: 18px;
+    line-height: 20px;
+    color: #858585;
+}
+
+.booking .booking-form .form-control {
+    background-color: #fbaf32;
+}
+
+.form-control {
+    color: #fff;
+}
+
+.btn-form {
+    color: #fbaf32;
+    background-color: #fff;
+    padding: 10px 70px;
+    border: 2px solid #fbaf32;
+    border-radius: 14px;
+    font-weight: 600;
+
+
+}
+
+.btn-form:hover {
+    background: #fbaf32;
+    color: #fff;
+    transition: 1.3s;
+}
+
+/* About */
+.about {
+    width: 100%;
+}
+
+.about h2 {
+    padding-top: 70px;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+.about p {
+
+    font-size: 18px;
+    line-height: 20px;
+    color: #858585;
+}
+
+.about-btn {
+    color: #fff;
+    background-color: #fbaf32;
+    padding: 10px 40px;
+    border: 2px solid #fbaf32;
+    border-radius: 24px;
+    font-weight: 600;
+
+}
+
+.about-btn:hover {
+    background: #fff;
+    color: #fbaf32;
+    transition: 1.3s;
+}
+
+/*  Features*/
+.container .features {
+    width: 100%;
+}
+
+.features h2 {
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+.photo-album {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.photo-frame {
+    width: 300px;
+    height: 200px;
+    margin: 2px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.photo-frame:hover .photo-ditels {
+    display: block;
+    background-color: rgba(189, 168, 115, 0.459);
+
+}
+
+.photo-frame:hover .photo {
+    transform: scale(1.3) rotate(5deg);
+    transition: 2s ease-in-out;
+}
+
+.features p {
+
+    font-size: 18px;
+    line-height: 20px;
+    color: #858585;
+}
+
+.features-btn {
+    color: #fff;
+    background-color: #fbaf32;
+    padding: 10px 70px;
+    border: 2px solid #fbaf32;
+    border-radius: 14px;
+    font-weight: 600;
+
+}
+
+.features-btn:hover {
+    background: #fff;
+    color: #fbaf32;
+    transition: 1.3s;
+}
+
+.features-icon h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.features-icon p {
+
+    font-size: 18px;
+    line-height: 20px;
+    color: #858585;
+}
+
+/* card */
+
+.card {
+    border: none;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.card-body h4 {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.card-body p {
+
+    font-size: 18px;
+    line-height: 20px;
+    color: #858585;
+}
+
+.card-m1 {
+    background-color: #f8f7f7;
+}
+
+.card-1 {
+    margin: 20px;
+}
+
+/* Chef */
+.chef {
+    text-align: center;
+}
+
+.chef .border-inner {
+    border: 5px solid firebrick;
+}
+
+.chef .border-inner .card-box {
+    border-radius: 30px;
+}
+
+.chef h2 {
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+/* Review */
+.card-m2 {
+    text-align: center;
+    background-color: #f8f7f7;
+}
+
+.card-2 {
+    margin: 20px;
+
+}
+
+.card-2 img {
+    margin-left: 60px;
+    width: 50%;
+    border-radius: 500px;
+}
+
+.icons {
+    color: #fbaf32;
+}
+
+/* Contact */
+.contact {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-ditels {
+
+    background-color: #f8f7f7;
+    padding: 20px;
+}
+
+.contact-icon {
+    background: #fbaf32;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+}
+
+.contact-text {
+    margin-top: -50px;
+}
+
+.map {
+    margin-top: 90px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+
+.contact .form-3 .contact-form {
+    width: 100%;
+    padding: 40px;
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+.contact .form-3.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-3 .contact-form .input-box input,
+.form-3 .contact-form .input-box input textarea {
+    width: 70%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: navajowhite;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.form-3 .contact-form .input-box box {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    transform: 0.9s;
+    color: #666;
+
+
+}
+
+.contact-form .input-box #input-btn {
+    margin: 20px;
+    text-decoration: none;
+    background: #fbaf32;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.form-3 .contact-form .input-box #input-btn:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 1.2s;
+    border: 1px solid #e02c6d;
+}
+
+/* Blog */
+
+.blog {
+    width: 100%;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+.blog .blog-img img {
+    border-radius: 4%;
+    width: 100%;
+}
+
+
+.blog .blog-content {
+    position: relative;
+    width: calc(100% - 60px);
+    top: -60px;
+    left: 30px;
+    padding: 25px 30px 30px 30px;
+    background: #ffffff;
+    box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+    border-radius: 15px;
+    z-index: 2;
+}

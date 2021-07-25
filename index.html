@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger-King</title>
+    <link rel="icon" type="images/fav.png" sizes="48x48" href="/images/fav.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fe16da8196.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <!-- Nav Start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" style="width: 60px;" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#booking">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#chef">Chef</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Page
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#blog">Blog</a></li>
+                                <li><a class="dropdown-item" href="#card">Card </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carousel-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Best <span>Quality</span> Ingredients</h1>
+                        <p>Some representative placeholder content for the first slide.
+                            Fastfood khawa valo na. kom khaben..!
+                        </p>
+                        <div class="slider-btn">
+                            <button class="btn-1">View Menu</button>
+                            <button class="btn-2">Book Table</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>World's Best <span>Chef</span></h1>
+                        <p>Some representative placeholder content for the second slide. Fastfood khawa valo na. kom
+                            khaben..!</p>
+                        <div class="slider-btn">
+                            <button class="btn-1">View Menu</button>
+                            <button class="btn-2">Book Table</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Fastest Order <span>Deliavery</span></h1>
+                        <p>Some representative placeholder content for the third slide. Fastfood khawa valo na. kom
+                            khaben..!.</p>
+                        <div class="slider-btn">
+                            <button class="btn-1">View Menu</button>
+                            <button class="btn-2">Book Table</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="overlay"></div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Booking Start -->
+        <section class="container booking" id="booking">
+            <div class="row p-5">
+                <div class="col-lg-8">
+                    <div class="booking-text">
+                        <p class="book">Book A Table</p>
+                        <h2>Book Your Table For <span>Private</span> <br>Dinners & Happy Hours</h2>
+                        <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
+                            mi. Curabitur
+                            facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum,
+                            viverra quis sem.</p> <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
+                            mi. Curabitur
+                            facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum,
+                            viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur
+                            convallis porttitor. Aliquam interdum at lacus non blandit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 booking-form p-3">
+                    <div class="form-floating mb-3">
+                        <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label style="color: aliceblue;" for="floatingInput">Name</label>
+                    </div>
+                    <div class="form-floating mt-2">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label style="color: aliceblue;" for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mt-2">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="Password">
+                        <label style="color: aliceblue;" for="floatingInput">Mobile</label>
+                    </div>
+                    <div class="form-floating mt-2">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="Password">
+                        <label style="color: aliceblue;" for="floatingInput">Date</label>
+                    </div>
+                    <div class="form-floating mt-2">
+                        <input type="time" class="form-control" id="floatingInput" placeholder="Password">
+                        <label style="color: aliceblue;" for="floatingInput">Time</label>
+                    </div>
+                    <div class="form-floating mt-2">
+                        <input type="name" class="form-control" id="floatingInput" placeholder="Password">
+                        <label style="color: aliceblue;" for="floatingInput">Guest</label>
+                    </div>
+                    <button class="btn-form mt-2">Book Now</button>
+                </div>
+            </div>
+        </section>
+        <!-- About -->
+        <section class="container about" id="about">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img style="width: 100%;" src="images/about.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <p class="book">About</p>
+                        <h2>Cooking Since <span>1990</span></h2>
+                        <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
+                            mi. Curabitur
+                            facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum,
+                            viverra quis sem.</p> <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium
+                            mi. Curabitur
+                            facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum,
+                            viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur
+                            convallis porttitor. Aliquam interdum at lacus non blandit.</p>
+                        <button class="about-btn mt-2">Book Now</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Features Start -->
+        <section class="container features" id="features">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="book">Why Choose Us
+                    </p>
+                    <h2>Our Key <span>Features</span>
+                    </h2>
+                    <div class="features-img">
+                        <div class="photo-album">
+                            <div class="photo-frame">
+                                <div class="photo">
+                                    <img src="images/feature-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="photo-frame">
+                                <div class="photo">
+                                    <img src="images/feature-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="photo-frame">
+                                <div class="photo">
+                                    <img src="images/feature-3.jpg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="photo-frame">
+                                <div class="photo">
+                                    <img src="images/feature-4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consec adipis elit. Phasel nec preti mi. Curabit facilis ornare velit
+                        non vulputa. Aliquam metus tortor, auctor id gravida condime, viverra quis sem. Curabit non nisl
+                        nec nisi sceleri maximus</p>
+                    <button class="features-btn mt-2">Book Now</button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="features-icon mt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img src="images/i.png" alt="">
+                                    <h4>World’s best Chef
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie
+                                        purus a felis condimentum molestie. </p>
+                                    <img src="images/i2.png" alt="">
+                                    <h4>Best quality products
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie
+                                        purus a felis condimentum molestie. Etiam a ullamcorper odio. </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="images/i3.png" alt="">
+                                    <h4>Fastest door delivery
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie
+                                        purus a felis condimentum molestie. </p>
+                                    <img src="images/i4.png" alt="">
+                                    <h4>Ground beef & Low fat
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie
+                                        purus a felis condimentum molestie. Etiam a ullamcorper odio. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Card Start -->
+        <section class="card-m1 mt-5 pb-3" id="card">
+            <div class="row">
+                <div class="col-lg-3">
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-group">
+                        <div class="card border-0 card-1">
+                            <img src="images/ci.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Burgers</h4>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card border-0 card-1">
+                            <img src="images/ci2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Beverages
+                                </h4>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card border-0 card-1">
+                            <img src="images/ci3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Snacks
+                                </h4>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+
+                </div>
+            </div>
+
+        </section>
+        <!-- Food Menu start -->
+        <section>
+
+        </section>
+        <!-- Chef start -->
+        <section class="container chef" id="chef">
+            <p class="book">Our Team
+            </p>
+            <h2>Our Master <span>Chef</span></h2>
+            <div class="card-group mt-5">
+                <div class="card border-0 shadow-lg h-100 m-3 rounded-3">
+                    <img src="images/team-1.jpg" class="card-img-top rounded-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Adam Phillips</h5>
+                        <p class="card-text">CEO, Co Founder </p>
+                    </div>
+                </div>
+                <div class="card border-0 shadow-lg h-100 m-3 rounded-3">
+                    <img src="images/team-2.jpg" class="card-img-top rounded-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dylan Adams
+                        </h5>
+                        <p class="card-text">Master Chef</p>
+                    </div>
+                </div>
+                <div class="card border-0 shadow-lg h-100 m-3 rounded-3">
+                    <img src="images/team-3.jpg" class="card-img-top rounded-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Jhon Doe
+                        </h5>
+                        <p class="card-text">Master Chef</p>
+                    </div>
+                </div>
+                <div class="card border-0 shadow-lg h-100 m-3 rounded-3">
+                    <img src="images/team-4.jpg" class="card-img-top rounded-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Josh Dunn</h5>
+                        <p class="card-text">Master Chef</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Review Start -->
+        <section class="card-m2 mt-5 pb-3" id="">
+            <div class="row">
+                <div class="col-lg-2">
+
+                </div>
+                <div class="col-lg-8">
+                    <div class="card-group">
+                        <div class="card border-0 card-2 ">
+                            <img src="images/testimonial-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                </p>
+                                <h5 class="card-title">Ms. Burgers</h5>
+                                <div class="icons">
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 card-2">
+                            <img src="images/testimonial-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                </p>
+                                <h5 class="card-title"> Mr. Beverages
+                                </h5>
+                                <div class="icons">
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 card-2">
+                            <img src="images/testimonial-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                </p>
+                                <h5 class="card-title">Ms. Snacks
+                                </h5>
+                                <div class="icons">
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <i class="fas fa-star filled" aria-hidden="true"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                </div>
+            </div>
+        </section>
+        <!-- Contact Start -->
+        <section class="container contact" id="contact">
+            <p class="book">Contact Us</p>
+            <h2><span>Contact</span> For Any Query</h2>
+            <div class="row mt-5">
+                <div class="contact-ditels rounded-3">
+                    <div class="row align-items-center contact-information">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="contact-info">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Address</h3>
+                                    <p>123 Street, NY, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="contact-info">
+                                <div class="contact-icon">
+                                    <i class="fa fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Call Us</h3>
+                                    <p>+012 345 6789</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="contact-info">
+                                <div class="contact-icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Email Us</h3>
+                                    <p>info@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1600663868074!5m2!1sen!2sbd"
+                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-3">
+                        <div class="contact-form">
+                            <form>
+                                <div class="input-box">
+                                    <input type="text" name="" placeholder="Enter your name" required>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" name="" placeholder="Enter your email" required>
+                                </div>
+                                <div class="input-box">
+                                    <textarea placeholder="Type your massage" requird name="" id="" cols="30"
+                                        rows="10"></textarea>
+                                </div>
+                                <div class="input-box">
+                                    <a id="input-btn" href="">Send Massage <i class="fa fa-envelope-o"></i></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog -->
+        <section class="container blog" id="blog">
+            <p class="book">Food Blog</p>
+            <h2>Latest From <span>Food Blog</span></h2>
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <div class="blog-img">
+                        <img src="images/blog-1.jpg" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste provident temporibus, ab
+                            quo quasi cupiditate fuga nobis incidunt! Cum dolorum porro magnam! Repellendus, debitis
+                            exercitationem accusantium reprehenderit nulla maiores.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blog-img">
+                        <img src="images/blog-2.jpg" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste provident temporibus, ab
+                            quo quasi cupiditate fuga nobis incidunt! Cum dolorum porro magnam! Repellendus, debitis
+                            exercitationem accusantium reprehenderit nulla maiores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p style="text-align: center;">Copyright © <span>Sheikh Roman</span> Your Site Name, All Right Reserved.</p>
+    </footer>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
